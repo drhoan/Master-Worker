@@ -32,7 +32,7 @@ on the master and worker threads, and terminate itself once all threads have joi
 only use pthreads condition variables for waiting and signaling: busy waiting is not allowed.
 Your code can be compiled as shown below.
 `gcc master-worker.c -lpthread`
-To run your code
+To run your code <br>
 `./master-worker #total_items #max_buf_size #num_workers #masters e.g. ./master-worker 100 10 4 3\n`
 
 If your code is written correctly, every integer from 0 toM −1 will be produced exactly once by the
@@ -46,7 +46,7 @@ the function print produced when it produces an integer into the buffer, and the
 must call the function print consumed when it removes an integer from the buffer to consume. You
 must invoke these functions suitably in your solution. Please do not modify these print functions, as their
 output will be parsed by the testing script.
-To run test script
+To run test script <br>
 `./test-master-worker.sh 100 10 4 3`
 
 Please ensure that you test your case carefully, as tricky race conditions can pop up unexpectedly.
