@@ -31,7 +31,7 @@ have been produced and consumed, all threads must exit. The main thread must cal
 on the master and worker threads, and terminate itself once all threads have joined. Your solution must
 only use pthreads condition variables for waiting and signaling: busy waiting is not allowed.
 Your code can be compiled as shown below.
-`gcc master-worker.c -lpthread`
+`gcc master-worker.c -lpthread` <br>
 To run your code <br>
 `./master-worker #total_items #max_buf_size #num_workers #masters e.g. ./master-worker 100 10 4 3\n`
 
@@ -45,7 +45,7 @@ print functions that must be invoked by the producer and consumer threads: the m
 the function print produced when it produces an integer into the buffer, and the worker threads
 must call the function print consumed when it removes an integer from the buffer to consume. You
 must invoke these functions suitably in your solution. Please do not modify these print functions, as their
-output will be parsed by the testing script.
+output will be parsed by the testing script. <br>
 To run test script <br>
 `./test-master-worker.sh 100 10 4 3`
 
