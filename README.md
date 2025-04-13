@@ -38,8 +38,8 @@ Example: <br>
 `./master-worker 100 10 4 3`
 
 If your code is written correctly, every integer from 0 toM −1 will be produced exactly once by the
-master producer thread, and consumed exactly once by the worker consumer threads. All master threads and worker threads should join as below <br>
-<img width="201" alt="image" src="https://github.com/user-attachments/assets/a78a1d94-3985-4dc0-9a31-a1b8e28fc09f" />
+master producer thread, and consumed exactly once by the worker consumer threads. And all master threads and worker threads should join as below <br>
+<img width="223" alt="image" src="https://github.com/user-attachments/assets/55f7c557-1f8f-4c4a-b76e-938c00c67324" />
 
 We have provided you with a simple testing script (test-master-worker.sh which invokes the script check.awk)
 that checks this above invariant on the output produced by your program. The script relies on the two
