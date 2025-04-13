@@ -36,7 +36,7 @@ To run your code
 `./master-worker #total_items #max_buf_size #num_workers #masters e.g. ./master-worker 100 10 4 3\n`
 
 If your code is written correctly, every integer from 0 toM −1 will be produced exactly once by the
-master producer thread, and consumed exactly once by the worker consumer threads. All master threads and worker threads should join as below
+master producer thread, and consumed exactly once by the worker consumer threads. All master threads and worker threads should join as below <br>
 <img width="201" alt="image" src="https://github.com/user-attachments/assets/a78a1d94-3985-4dc0-9a31-a1b8e28fc09f" />
 
 We have provided you with a simple testing script (test-master-worker.sh which invokes the script check.awk)
@@ -57,7 +57,7 @@ number of master/worker threads, as such cases can uncover some tricky bugs. Inc
 of threads to large values beyond a few hundred will cause your system to slow down considerably, so
 exercise caution. 
 
-If you pass all tess cases, the output should look like below
+If you pass all tess cases, the output should look like below <br>
 <img width="486" alt="image" src="https://github.com/user-attachments/assets/30470731-9e78-424c-927e-6346eaa7d2eb" />
 
 Source https://www.cse.iitb.ac.in/~mythili/os/
