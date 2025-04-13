@@ -30,10 +30,12 @@ necessary to ensure perfect load balancing between the workers. Once allM intege
 have been produced and consumed, all threads must exit. The main thread must call pthread join
 on the master and worker threads, and terminate itself once all threads have joined. Your solution must
 only use pthreads condition variables for waiting and signaling: busy waiting is not allowed.
-Your code can be compiled as shown below.
+Your code can be compiled as shown below: <br>
 `gcc master-worker.c -lpthread` <br>
-To run your code <br>
-`./master-worker #total_items #max_buf_size #num_workers #masters e.g. ./master-worker 100 10 4 3\n`
+To run your code: <br>
+`./master-worker #total_items #max_buf_size #num_workers #masters` <br>
+Example: <br>
+`./master-worker 100 10 4 3`
 
 If your code is written correctly, every integer from 0 toM −1 will be produced exactly once by the
 master producer thread, and consumed exactly once by the worker consumer threads. All master threads and worker threads should join as below <br>
@@ -46,7 +48,7 @@ the function print produced when it produces an integer into the buffer, and the
 must call the function print consumed when it removes an integer from the buffer to consume. You
 must invoke these functions suitably in your solution. Please do not modify these print functions, as their
 output will be parsed by the testing script. <br>
-To run test script <br>
+To run test script: <br>
 `./test-master-worker.sh 100 10 4 3`
 
 Please ensure that you test your case carefully, as tricky race conditions can pop up unexpectedly.
